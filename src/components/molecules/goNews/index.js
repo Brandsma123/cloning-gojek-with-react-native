@@ -2,7 +2,7 @@ import styles from './style';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
 import React, {Component} from 'react';
 
-const GoNews = props => {
+const GoNews = ({onPress}) => {
   return (
     <View style={styles.sectionNews}>
       <View style={styles.viewSection}>
@@ -21,7 +21,7 @@ const GoNews = props => {
       <View style={styles.section}>
         <Text style={styles.titleNews}>GO-NEWS</Text>
         <Text style={styles.textNews}>Dimas save the pinalty from Malasya</Text>
-        <TouchableOpacity style={styles.buttonSection}>
+        <TouchableOpacity style={styles.buttonSection} onPress={onPress}>
           <Text style={styles.textButtonSection}>READ</Text>
         </TouchableOpacity>
       </View>
